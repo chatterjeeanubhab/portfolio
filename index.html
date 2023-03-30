@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e7d526b1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="IMAGES/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>JAVA PROGRAMMER</p>
+                <H1>HI,I AM <span>ANUBHAB CHATTOPADHYAY</span><br>FROM INDIA</H1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                    <div class="about-col-1">
+                        <img src="IMAGES/ABOUT ME.jpeg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <H1 class="sub-title">ABOUT ME</H1>
+                        <p>Hi this is Anubhab Chattopadhyay,a student of B.tech.My stream 
+                            is Computer Science and Engineering.My college is Acedemy of Technology.
+                            Currently I am 3rd year of My 4th year course.I love to develope Software.
+                            My hobby is playing Cricket.
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>JAVA</span><br>oops</li>
+                            <li><span>C</span><br>DSA</li>
+                            <li><span>DBMS</span><br>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            
+                                <li><span>DATA Science INTERN</span><br>OSIS-INFOBYTE</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Higher Secondary</span><br>2020</li>
+                            <li><span>B.Tech</span><br>2020-2024</li>
+                            
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!------------services----------------->
+    <div id="services">
+        <div class="container">
+            <H1 class="sub-title">My services</H1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>JAVA</h2>
+                    <p>Object oriented programming in JAVA</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>WEB DEVELOPEMENT</h2>
+                    <p>Making of different merchent website using different languages s</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <p>Database Management system using SQL</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    <!------------portfolio----------------->
+    <!----------contact-------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><i class="fa-sharp fa-solid fa-paper-plane"></i>Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>chattopadhyayanubhab@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7863929334</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/anubhab.chatterjee.754"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/anubhab.chatterjee100?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://www.linkedin.com/in/anubhab-chattopadhyay-77947a235"><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                    <a href="IMAGES/new cv 2023.pdf" download class="btn btn2">Download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name"  placeholder="Your Name" required>
+                        <input type="email" name="email"  placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        
+                    </form>
+                </div>
+              
+            </div>
+        </div>
+        <div class="copyright"></div>
+        <p>Copyright to @anubhab</p>
+    </div>
+
+   <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+    
+</body>
+</html>
